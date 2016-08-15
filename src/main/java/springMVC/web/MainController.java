@@ -43,7 +43,7 @@ public class MainController  {
 
 
     @RequestMapping(value = "/findByWord", method = RequestMethod.GET)
-    public ModelAndView checkUser(@RequestParam("name") String name) {
+    public ModelAndView findDish(@RequestParam("name") String name) {
         ModelAndView modelAndView = new ModelAndView();
         String header = " <tr> <th> Name </th> <th>Dish category </th>  <th>Price</th> <th>Weight</th> </tr>";
         modelAndView.addObject("der",header);
