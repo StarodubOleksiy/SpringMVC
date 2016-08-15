@@ -32,7 +32,7 @@ public class HEmployeeDao implements EmployeeDao {
     @Transactional
     public List<Employee> findAll() {
         Session session = sessionFactory.getCurrentSession();
-        return session.createQuery(" select e from Employee e").list();
+        return session.createQuery(" select e from Employee e  where position = 'WAITER'").list();
     }
 
     @Override

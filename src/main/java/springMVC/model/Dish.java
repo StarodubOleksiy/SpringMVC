@@ -27,6 +27,8 @@ public class Dish {
     private float price;
     @Column(name = "weight")
     private float weight;
+    @Column(name = "image")
+    private String image;
 
 
 
@@ -85,6 +87,14 @@ public class Dish {
 
     public List<Storage> getIngradients() {
         return ingradients;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
     }
 
 

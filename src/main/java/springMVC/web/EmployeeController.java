@@ -27,14 +27,14 @@ public class EmployeeController {
         return "employees";
     }
 
-    @RequestMapping(value = "/employee", method = RequestMethod.GET)
+ /*   @RequestMapping(value = "/employee", method = RequestMethod.GET)
     public ModelAndView employee(@RequestParam("employeeName")String employeeName) {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("employee", employeeService.getEmployeeByName(employeeName));
         modelAndView.setViewName("employee");
         return modelAndView;
-    }
+    }*/
 
     @Autowired
     public void setEmployeeService(EmployeeService employeeService) {

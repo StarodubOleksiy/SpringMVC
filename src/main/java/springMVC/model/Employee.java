@@ -33,29 +33,32 @@ public class Employee {
     @Column(name = "salary")
     private Float salary;
 
-    @Id
-    @Column(name = "id")
+    @Column(name = "photography")
+    private String photography;
+
+
+
     public Long getId() {
         return id;
     }
-    @Column(name = "name")
+
     public String getName() {
         return name;
     }
-    @Column(name = "surname")
+
     public String getSurname() {
         return surname;
     }
-    @Column(name = "phone_number")
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    @Column(name = "position")
+
     @Enumerated(EnumType.STRING)
     public Position getPosition() {
         return position;
     }
-    @Column(name = "salary")
+
     public Float getSalary() {
         return salary;
     }
@@ -82,8 +85,17 @@ public class Employee {
         this.name = name;
     }
 
+    public void setPhotography(String photography) {
+        this.photography = photography;
+    }
 
-   @Override
+    public String getPhotography() {
+        return photography;
+    }
+
+
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

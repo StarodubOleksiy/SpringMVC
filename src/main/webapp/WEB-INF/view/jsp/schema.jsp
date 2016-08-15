@@ -11,7 +11,8 @@
     <title></title>
 </head>
 <body>
-<h1>Hello schema</h1>
-<img src="pictures/club_shema_1.jpg" alt="Логотип" />
+<h1>Схема ресторана</h1>
+<img src="/resources/images/club_shema_1.jpg" alt="Логотип" />
+
 </body>
 </html>

@@ -2,10 +2,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
     <title></title>
 </head>
 <body>
-<h1>Hello dishes</h1>
+<div class="dish">
+<h1>Меню ресторана</h1>
 <table style="align-items: center">
   <tr>
     <th> Name </th>
@@ -21,7 +23,7 @@
     </tr>
   </c:forEach>
 </table>
-
+  </div>
 
 </body>
 </html>

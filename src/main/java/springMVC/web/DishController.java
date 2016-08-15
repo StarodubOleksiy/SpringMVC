@@ -37,13 +37,15 @@ public class DishController {
     }
 
     @RequestMapping(value = "/dish", method = RequestMethod.GET)
-    public ModelAndView employee(@RequestParam("dishName")String dishName) {
-
+    public ModelAndView dish(@RequestParam("dishName")String dishName) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("dish", dishService.getDishByName(dishName));
         modelAndView.addObject("ingradients", dishService.getDishByName(dishName).getIngradients());
+        modelAndView.addObject("image", "club_shema_1.jpg");
         modelAndView.setViewName("dish");
         return modelAndView;
     }
+
+
 
 }
